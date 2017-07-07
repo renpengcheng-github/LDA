@@ -15,10 +15,10 @@ class lda_model:
         self.con = self.conn.cursor()  # con  replace  cur
         #-------------------------------------------------------------------------------------------------------------------
         #初始化变量
-        self.K = 10
+        self.K = 100
         self.beta = 0.1
         self.alpha = 0.1
-        self.iter_times = 30#迭代次数
+        self.iter_times = 300#迭代次数
 
         self.docs = doc  # docs 为urlid 文档的真正编号 遍历时以下标遍历 字典结构
         #self.top_words_num = 20
